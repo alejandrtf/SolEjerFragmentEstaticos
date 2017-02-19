@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity implements LinkListFragment.
 
     private WebViewFragment wvFragment;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

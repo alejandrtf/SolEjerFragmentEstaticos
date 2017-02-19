@@ -78,6 +78,7 @@ public class WebViewFragment extends Fragment {
         webView.saveState(outState);
     }
 
+    
     @Override
     public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);

@@ -68,7 +68,6 @@ public class LinkListFragment extends ListFragment {
         //aviso a mi listener con el título pulsado
         mListener.onListFragmentSelection(((String) l.getItemAtPosition(position)));
 
-
     }
 
 
