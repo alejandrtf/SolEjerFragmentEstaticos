@@ -8,4 +8,4 @@ Así:
 
 -	Rama “Version2_SalvandoEstado”: contiene la solución guardando el estado al girar el dispositivo, pero sigue siendo una sola pantalla.
 
--	Rama “Version3_LayoutAlternativosAlias: contiene la solución que permite usar un diseño de pantalla para teléfono o dispositivo pequeño con un simple panel y otro dual panel para dispositivos tablets. Además se implementa usando alias para los layouts.
+-	Rama “Version3_LayoutAlternativosSinAlias: contiene la solución que permite usar un diseño de pantalla para teléfono o dispositivo pequeño con un simple panel y otro dual panel para dispositivos tablets. Sin usar alias para implementar los layouts alternativos.
