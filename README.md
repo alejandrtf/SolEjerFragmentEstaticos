@@ -10,3 +10,5 @@ Así:
 
 - Rama “Version3_LayoutAlternativosSinAlias: contiene la solución que permite usar un diseño de pantalla para teléfono o dispositivo pequeño con un simple panel y otro dual panel para dispositivos tablets. Sin usar alias para implementar los layouts alternativos.
 
+-	Rama “Version4_LayoutAlternativosConAlias: contiene la solución que permite usar un diseño de pantalla para teléfono o dispositivo pequeño con un simple panel y otro dual panel para dispositivos tablets. Usando alias para implementar los layouts alternativos.
+
