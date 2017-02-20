@@ -1,17 +1,10 @@
 package com.android.alejandra.ejlayoutestaticoconfragmentestaticoylayoutalt;
 
 import android.content.Intent;
-import android.os.PersistableBundle;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import com.android.alejandra.ejlayoutestaticoconfragmentestaticoylayoutalt.model.LinkData;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements LinkListFragment.OnListFragmentSelectionListener {
 
@@ -20,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements LinkListFragment.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.main_layout);
 
         //cargo datos de los recursos
         LinkData.inicializarItemsFromResources(getResources().getStringArray(R.array.lista_enlaces_tutoriales_Android),

@@ -2,7 +2,6 @@ package com.android.alejandra.ejlayoutestaticoconfragmentestaticoylayoutalt;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.webkit.WebView;
 
 public class SegundaActivity extends AppCompatActivity {
     public static final String EXTRA_URL = "com.android.alejandra.ejlayoutestaticoconfragmentestaticoylayoutalt.EXTRA_URL";
@@ -10,7 +9,7 @@ public class SegundaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_segunda);
+        setContentView(R.layout.panel_visor_webview);
 
         //recojo la url que me llega desde la otra activity
         String url = getIntent().getStringExtra(EXTRA_URL);

@@ -57,7 +57,7 @@ public class WebViewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //inflo layout
-        View v=inflater.inflate(R.layout.web_layout, container, false);
+        View v=inflater.inflate(R.layout.fragment_webview_layout, container, false);
         webView= (WebView) v.findViewById(R.id.wvWebPage);
         return v;
 
