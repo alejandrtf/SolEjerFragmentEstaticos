@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements LinkListFragment.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_dual_panel_wide);
+        setContentView(R.layout.main);
 
         //cargo datos de los recursos
         LinkData.inicializarItemsFromResources(getResources().getStringArray(R.array.lista_enlaces_tutoriales_Android),
@@ -35,10 +35,18 @@ public class MainActivity extends AppCompatActivity implements LinkListFragment.
         String url = LinkData.ITEM_MAP.get(tituloElegido).getEnlaceContenido();
 
         wvFragment = (WebViewFragment) getSupportFragmentManager().findFragmentById(R.id.webFragment);
-        //muestro la url
-        if (!wvFragment.getActualUrl().equals(url))
-            wvFragment.mostrarUrl(url);
-
+        if(wvFragment==null){
+            //No hay fragment WebViewFragment. Por tanto, estamos en un dispositivo pequeño
+            //Lanzamos la otra activity
+            Intent i=new Intent(this,SegundaActivity.class);
+            i.putExtra(SegundaActivity.EXTRA_URL,url);
+            startActivity(i);
+        }
+        else {
+            //muestro la url
+            if (!wvFragment.getActualUrl().equals(url))
+                wvFragment.mostrarUrl(url);
+        }
 
     }
 
